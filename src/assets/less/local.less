@@ -458,11 +458,15 @@
 <---           Logos            -->
 <--- -------------------------- -*/
 
+
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+     
     #logos-857 {
         padding: var(--sectionPadding);
         background-color: #f7f7f7;
+        
 
         .cs-container {
             width: 100%;
@@ -485,6 +489,7 @@
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
         }
+        
 
         .cs-title {
             margin: 0;
@@ -492,10 +497,13 @@
 
         .cs-logo-group {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: (40/16rem);
+            position: relative;
+            width: 100%;
+            animation: logoSlide 25s linear infinite;
         }
 
         .cs-logo {
@@ -504,6 +512,18 @@
             height: auto;
             margin: 0;
             display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 0rem) {
+    @keyframes logoSlide {
+        0% {
+            transform:translateX(0)
+        }
+
+        to {
+            transform:translateX(-100%)
         }
     }
 }
