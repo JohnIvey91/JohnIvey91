@@ -1,0 +1,1016 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Meta description for the page">
+        <link rel="canonical" href="https://www.example.com/">
+        <meta name="generator" content="Eleventy v3.1.2">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Concrete Contractors in Shreveport, LA | SC Steel &amp; Concrete Professionals"/>
+        <meta property="og:description" content="Meta description for the page"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.example.com/"/>
+        <meta property="og:image" content="/assets/images/logo-small.png"/>
+        <meta property="og:image:secure_url" content="/assets/images/logo-small.png"/>
+
+        <!--Favicons-->
+        <!-- https://realfavicongenerator.net/ -->
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Starter Kit"/>
+        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/all.min.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <!-- Critical styles are loaded first -->
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
+
+    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    
+        <link rel="stylesheet" href="/assets/css/local.css"/>
+    
+
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Code Stitch Web Designs",
+        
+        "telephone": "(555) 779-4407",
+        "email": "help@codestitch.app",
+        
+            "address": {
+                "@type": "PostalAddress",
+                    "streetAddress": "First Address Line, Second Address Line",
+                    "addressLocality": "Denver",
+                    "addressRegion": "CO",
+                    "postalCode": "80206",
+                    "addressCountry": "US"},
+        
+        "url": "https://www.example.com/",
+        
+            "sameAs": ["https://www.facebook.com/","https://www.instagram.com/"]
+        
+    }
+</script> -->
+
+
+        <title>Concrete Contractors in Shreveport, LA | SC Steel &amp; Concrete Professionals</title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <!--Nav Logo-->
+    <a href="/" class="cs-logo cs-desktop" aria-label="back to home">
+        <div class="cs-logo-wrapper">
+            <!--Default Logo-->
+            <img class="cs-default" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a1fbcf95735c2308c30b91.png" alt="logo" width="360" height="145" aria-hidden="true" decoding="async">
+            <!--Dark Mode Logo-->
+            <img class="cs-dark" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/6951d8bb73a5e0d53e81931f.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </div>
+    </a>
+    <div class="cs-middle">
+        <!--Top Bar-->
+        <div class="cs-top-bar">
+            <div class="cs-top-social">
+                <a href="https://www.facebook.com/profile.php?id=61559730231208" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.tiktok.com/@scsteelandconcretepros" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://stcdn.leadconnectorhq.com/funnel/icons/light-gray/tiktok-light-gray.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async" style="filter: brightness(0.20);">
+                </a>
+                <a href="https://www.instagram.com/steelandconcretepros?igsh=NHRnNDRqOWFzc2Fn" class="fa-brands fa-tiktok">
+                    <img class="fa-brands fa-tiktok" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.youtube.com/@steelandconcretepros" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+            <ul class="cs-location">
+                <li class="cs-item cs-remove">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-pin1.svg" alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                    6569 Colquitt Rd, Keithville, LA 71047
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-clock1.svg" alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                    M-F: 8:00am - 9:00pm
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom-bar">
+            <a href="/" class="cs-logo cs-mobile" aria-label="back to home">
+                <div class="cs-logo-wrapper">
+                    
+        
+                    <!--Default Logo-->
+                    <img class="cs-default" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a1fbcf95735c2308c30b91.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                    <!--Dark Mode Logo-->
+                    <img class="cs-dark" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/6951d8bb73a5e0d53e81931f.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        
+
+                </div>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about/" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Services
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg" alt="dropdown icon" width="24" height="24" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                <a href="/foundation-stabilization/" class="cs-li-link cs-drop-link">Foundation Stabilization</a>
+                                </li>
+                                 <li class="cs-drop-li">
+                                <a href="/driveways/" class="cs-li-link cs-drop-link">Driveways</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                <a href="/concrete-repair/" class="cs-li-link cs-drop-link">Concrete Repair</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                <a href="/retaining-walls/" class="cs-li-link cs-drop-link">Retaining Walls</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                <a href="/stamped-concrete/" class="cs-li-link cs-drop-link">Stamped Concrete</a>
+                                </li>
+                                  <li class="cs-drop-li">
+                                <a href="/metal-building-concrete/" class="cs-li-link cs-drop-link">Metal Building Concrete</a>
+                                </li>
+                                
+                                
+                            </ul>
+                        </li>
+
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Service Areas
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg" alt="dropdown icon" width="24" height="24" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                 <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Shreveport</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Bossier City</a>
+                                </li>  
+                            </ul>
+                        </li>
+
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <!--
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Foundations
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg" alt="dropdown icon" width="24" height="24" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                <a href="/concrete-crack-repair-shreveport-la/" class="cs-li-link cs-drop-link">Crack Repair</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                <a href="/foundation-repair/" class="cs-li-link cs-drop-link">House Leveling</a>
+                                </li>
+                                  <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Pier Installation</a>
+                                </li>
+                                  <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Slab Foundation Repair</a>
+                                </li>
+                                  <li class="cs-drop-li">
+                                <a href="/contact/" class="cs-li-link cs-drop-link">Free Inspection</a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+                        <li class="cs-li">
+                            <a href="/metal-building-concrete/" class="cs-li-link">
+                                Metal Buildings
+                            </a>
+                        </li>
+                         
+                    </ul>
+                </div>
+            </nav>
+            <a class="cs-nav-button cs-tablet" href="tel:3183830070">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg" alt="icon" width="24" height="24">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Free Contact 24/7</span>
+                    <span class="cs-link-content">(318) 383-0070</span>
+                </div>
+            </a>
+            <a href="/contact/" class="cs-button-border">
+                Get In Touch
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/up-right-arrow.svg" alt="icon" width="20" height="20">
+            </a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+        </div>
+    </div>
+    <div class="cs-contact-wrapper">
+        <a class="cs-desktop-button" href="tel:(318) 383-0070">
+            <picture class="cs-wrapper">
+                <img class="cs-button-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg" alt="icon" width="24" height="24">
+            </picture>
+            <div class="cs-info">
+                <span class="cs-header">Free Contact 24/7</span>
+                <span class="cs-link-content">(318) 383-0070</span>
+            </div>
+        </a>
+    </div>
+</header>
+                                
+        <main id="main">
+            
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-2275">
+    <div class="cs-container">
+        <div class="cs-content">
+            <!--<h1 class="cs-title">Concrete and Foundation Experts in Shreveport, LA</h1>-->
+            <h1 class="cs-title">Trusted Concrete Contractors in Shreveport, LA</h1>
+            <p class="cs-text">
+                SC Steel & Concrete Professionals is a full-service concrete company offering everything from driveways, patios, and walkways, to retaining walls and foundation repair. We're licensed, insured, and proud to serve our community.
+            </p>
+            <a href="/contact/" class="cs-button-solid">
+                Get Free Quote
+                <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+            </a> 
+        </div>
+    </div>
+    <div class="cs-image-group">
+        <!--Left Image-->
+        <!-- <picture class="cs-background cs-background1">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg">
+            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg" alt="construction site" width="1290" height="684">
+        </picture> -->
+
+        <picture class="cs-background cs-background1">
+            <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/692654f28dd83d7052aa2b6d.jpg">
+            <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/692654f28dd83d7052aa2b6d.jpg">
+             <img aria-hidden="true" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/692654f28dd83d7052aa2b6d.jpg" alt="construction site" width="1290" height="684">
+        </picture> 
+
+        <!--Right Image-->
+        <!-- <picture class="cs-background cs-background2">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg">
+            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg" alt="construction site" width="630" height="684">
+        </picture> -->
+        <picture class="cs-background cs-background2">
+            <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46039bdc0463e5cd88.jpg">
+            <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46039bdc0463e5cd88.jpg">
+            <img aria-hidden="true" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46039bdc0463e5cd88.jpg" alt="construction site" width="630" height="684">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="Hservices-2275">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/new-concrete-slabs/" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction1.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Driveways</h3>
+                    <p class="cs-item-text">
+                        Driveways that last through hot summers and rainy seasons.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/new-concrete-slabs/" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction2.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Patios</h3>
+                    <p class="cs-item-text">
+                        Beautifully designed patios for outdoor living and entertainment.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/foundation-repair/" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction3.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Foundations</h3>
+                    <p class="cs-item-text">
+                        Reliable foundation repair and construction services to keep your home safe and secure.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item cs-item-background">
+                <picture class="cs-item-picture">
+                    <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46039bdc0463e5cd88.jpg">
+                    <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46039bdc0463e5cd88.jpg">
+                    <img aria-hidden="true" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46039bdc0463e5cd88.jpg" alt="construction site" width="630" height="684">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction4.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <span class="cs-number">100+</span>
+                    <h3 class="cs-h3">Happy Customers</h3>
+                    <p class="cs-item-text">
+                        With more than 30 years of combined experience.
+                    </p>
+                    <span class="cs-fake-link">
+                        Let's Work Together
+                        <img class="cs-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+                    </span>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg">
+                        <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg" alt="construction site" width="630" height="684">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side - About Us          -->
+<!-- ============================================ -->
+
+<section id="sbs-2276">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/699bfc2e5dfd50857362fe91.jpeg">
+                <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/699bfc2e5dfd50857362fe91.jpeg">
+                <img aria-hidden="true" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/699bfc2e5dfd50857362fe91.jpeg" alt="construction site" width="413" height="492" loading="lazy">
+            </picture>
+            <a href="/about/" class="cs-button-solid">
+                Learn About Us
+                <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+            </a> 
+        </div>
+        <div class="cs-content">
+            <div class="cs-header">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">We are a full service concrete company</h2>
+            </div>
+            <div class="cs-wrapper">
+                <div class="cs-flex">
+                    <p class="cs-text">
+                        We're a full-service concrete company offering everything from residential and commercial concrete to driveways, patios, walkways, retaining walls, and foundation repair. We're licensed, insured, and proud to serve Shreveport.
+                    </p>
+                    <p class="cs-text">
+                        Our goal is simple: do great work you can trust. We work with you from the first call all the way through project completion. We're easy to work with, we show up when we say we will, and we stand behind everything we pour.
+                    </p>
+                    <!-- <img class="cs-signature" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/699bfcb8d0716ba7a01d8288.png" decoding="async" loading="lazy" alt="signature" width="170" height="59" aria-hidden="true"> -->
+                    <span class="cs-name">Tyler Partington</span>
+                    <span class="cs-desc">Founder, SC Steel & Concrete Professionals</span>
+                    <!--if you change this button class name, change the class name to rename it as well in the css at small desktop media query-->
+                    <a href="/contact/" class="cs-button-solid">
+                    Free Quote
+                    <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+            </a> 
+                </div>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69265b8d1dd8c90ea280c239.png">
+                    <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69265b8d1dd8c90ea280c239.png">
+                    <img aria-hidden="true" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69265b8d1dd8c90ea280c239.png " alt="construction site" width="362" height="400" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-2277">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-header">
+                <span class="cs-topper">Why Choose Us</span>
+                <h2 class="cs-title">Why Homeowners Trust SC Steel & Concrete Professionals</h2>
+            </div>
+            <div class="cs-wrapper">
+                <div class="cs-flex">
+                    <p class="cs-text">
+                        SC Steel & Concrete Professionals brings years of experience and a commitment to quality work. We take pride in every project, no matter the size. Our team listens to what you need and delivers results you can count on.
+                    </p>
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="squares" width="11" height="11">
+                            <p class="cs-item-text">
+                                <strong>Reliable & On-Time:</strong> We respect deadlines and work efficiently without compromising quality.
+                            </p>
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="squares" width="11" height="11">
+                            <p class="cs-item-text">
+                                <strong>Customized Solutions:</strong> Every project is tailored to meet your unique needs.
+                            </p>
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg" loading="lazy" decoding="async" alt="squares" width="11" height="11">
+                            <p class="cs-item-text">
+                                <strong>Local and Trusted: </strong> Our team has served the Shreveport-Bossier Area with over 30 years of experience with a reputation for excellence when it comes to concrete related services like driveway repair, patio repair and installation.
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="" class="cs-button-solid">
+                Call Us Today
+                <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+            </a> 
+                </div>
+                <div class="cs-image-group">
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <img class="cs-item-icon" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/building-white.svg" alt="icon" width="48" height="48" loading="lazy">
+                            <span class="cs-number">
+                                50+
+                                <span class="cs-desc">Projects Completed</span>
+                            </span>
+                        </li>
+                        <li class="cs-item">
+                            <img class="cs-item-icon" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/trophy-white.svg" alt="icon" width="48" height="48" loading="lazy">
+                            <span class="cs-number">
+                                100's
+                                <span class="cs-desc">Satisfied Customers</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46948ba561097b181c.jpg">
+                        <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46948ba561097b181c.jpg">
+                        <img aria-hidden="true" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46948ba561097b181c.jpg" alt="construction site" width="755" height="491" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="cs-floater" aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/paint-brush.png" alt="paint brush" width="483" height="160" loading="lazy">
+</section>
+                            
+                                
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-2279">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h2 class="cs-title">Our Concrete Services</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Concrete Driveways</h3>
+                <p class="cs-item-text">
+                    Durable driveways built to withstand Louisiana's heat, humidity, and heavy rain. Our reinforced concrete lasts 20+ years with minimal maintenance.
+                </p>
+                <a href="/driveways/" class="cs-link">
+                    Learn More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46948ba561097b181c.jpg" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Patios & Walkways</h3>
+                <p class="cs-item-text">
+                    Create the perfect outdoor space for entertaining family and friends. From simple concrete to custom stamped designs—we build patios that add value and beauty to your home.
+                </p>
+                <a href="/patio-walkways/" class="cs-link">
+                    Learn More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Foundation Repair</h3>
+                <p class="cs-item-text">
+                    Cracks, settling, or moisture issues? Our foundation specialists diagnose problems and provide solutions to protect your home's structural integrity.
+                </p>
+                <a href="/foundation-repair/" class="cs-link">
+                    Learn More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Retaining Walls</h3>
+                <p class="cs-item-text">
+                    Prevent erosion and add dimension to your landscaping. We build retaining walls that are both functional and visually appealing.
+                </p>
+                <a href="/retaining-walls/" class="cs-link">
+                    Learn More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Stamped Concrete</h3>
+                <p class="cs-item-text">
+                    High-end decorative concrete that mimics natural stone, brick, or slate. Get the luxury look without the luxury price tag.
+                </p>
+                <a href="/stamped-concrete/" class="cs-link">
+                    Learn More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Metal Building Foundations</h3>
+                <p class="cs-item-text">
+                    Industrial-grade concrete slabs designed to support agricultural buildings, garages, warehouses, and commercial structures with precision and durability.
+                </p>
+                <a href="/metal-building-concrete/" class="cs-link">
+                    Learn More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+        </ul>
+    </div>
+    <!--Waves Background-->
+    <picture class="cs-accent">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/brush-strokes.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/brush-strokes.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/brush-strokes.jpg" alt="brush strokes" width="1920" height="331" aria-hidden="true">
+    </picture>
+</section>
+                                                              
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-889">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Process</span>
+            <h2 class="cs-title">How It Works</h2>
+            <p class="cs-text">
+                From your first call to the final pour, we make the process simple and stress-free. Here's how we bring your concrete vision to life:
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Contact Us</h3>
+                <p class="cs-item-p">
+                    Get in touch with our team to discuss your project and schedule a consultation.
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Initial Evaluation</h3>
+                <p class="cs-item-p">
+                    Our team conducts a thorough assessment of your project requirements and site conditions to ensure a successful outcome.
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Develop a Plan</h3>
+                <p class="cs-item-p">
+                    Our team creates a customized plan tailored to your project's needs, ensuring a smooth and efficient execution.
+                </p>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">
+            Get Started
+                <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+            </a> 
+    </div>
+</section>
+  
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1672">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Our Clients Say</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Jordan Spratt
+                        <span class="cs-job">Homeowner</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Best qualities in a business: show up and do what you say. That's SC when it comes to concrete. I've had my patio and driveway done and have been more than satisfied with both.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/review2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Troy Cummings
+                        <span class="cs-job">Homeowner</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Great concrete work for my pool concrete extension! I would recommend this company to anyone. I learned a lot in regards to concrete work from him!
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Carol Moloney
+                        <span class="cs-job">Homeowner</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Prompt engagement, professional, friendly and knowledgeable about driveway replacement. Would highly recommend.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-2286">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608196d03ee3f79546591.png">
+                <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608196d03ee3f79546591.png">
+                <img loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608196d03ee3f79546591.png" alt="people outside" width="305" height="405" aria-hidden="true">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46ac722f3c998e0a08.jpg">
+                <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46ac722f3c998e0a08.jpg">
+                <img loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69161f46ac722f3c998e0a08.jpg" alt="people outside" width="306" height="360" aria-hidden="true">
+            </picture>
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608dfb701fe91ed2c2f37.png">
+                <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608dfb701fe91ed2c2f37.png">
+                <img loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608dfb701fe91ed2c2f37.png" alt="person gardening" width="305" height="180" aria-hidden="true">
+            </picture>
+            <picture class="cs-picture cs-picture4">
+                <source media="(max-width: 600px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a1f6fe95735c893cc1c2c1.jpeg">
+                <source media="(min-width: 601px)" srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a1f6fe95735c893cc1c2c1.jpeg">
+                <img loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a1f6fe95735c893cc1c2c1.jpeg" alt="urban environment in green" width="306" height="360" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">FAQ</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            1. What areas do you serve?
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        We serve Shreveport, Bossier City, and the surrounding Northwest Louisiana area. Not sure if you're in our service area? Just give us a call.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            2. What types of projects do you specialize in?
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        We specialize in foundations repair, driveways, patios, metal building slabs, and retaining walls. Our team is dedicated to delivering high-quality workmanship and exceptional customer service.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            3. Can I see examples of your previous work?
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes! Visit our project gallery or check out our Google Business Profile to see completed projects and reviews from local homeowners.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            4. Do you provide free consultations and estimates?
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        We do. We'll come out, take a look, and give you a clear estimate at no charge.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            5. Are you licensed, insured, and bonded?
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. SC Steel & Concrete Professionals is fully licensed, insured, and bonded.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+                                
+
+    
+
+        </main>
+        <!-- ============================================ -->
+<!--                Call To Action                -->
+<!-- ============================================ -->
+
+<section id="cta-2293">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <div class="cs-topper">Contact</div>
+                <h2 class="cs-title">Get Your Free Estimate Today</h2>
+                <p class="cs-text">
+                    Let us help you plan your next concrete or steel project. Contact us today for a free consultation and detailed estimate tailored to your project's unique needs. 
+            </div>
+            <a href="/contact/" class="cs-button-solid">Get Started Today</a>
+        </div>
+        <div class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-yellow.svg" alt="logo" width="32" height="32">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Contact</span>
+                    <a class="cs-link" href="">M: (318) 383-0070</a>
+                    <a class="cs-link" href="">E: quote@scllc.pro</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/pin-yellow.svg" alt="logo" width="32" height="32">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Location</span>
+                    <a class="cs-link" href="">6569 Colquitt Rd <br>Keithville, LA 71047</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-yellow.svg" alt="logo" width="32" height="32">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Working Hours</span>
+                    <span class="cs-link">Monday - Friday: 8:00 AM - 9:00 PM</span>
+                    <span class="cs-link">Saturday: 9:00 AM - 3:00 PM</span>
+                    <span class="cs-link">Sunday: Closed</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/social-yellow.svg" alt="logo" width="32" height="32">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Social Media</span>
+                    <div class="cs-social-links">
+                        <a class="cs-link" href="https://www.facebook.com/profile.php?id=61559730231208">
+                            Facebook
+                            <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+                        </a>
+                        <a class="cs-link" href="https://www.instagram.com/steelandconcretepros?igsh=NHRnNDRqOWFzc2Fn">
+                            Instagram
+                            <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+                        </a>
+                        <a class="cs-link" href="https://www.linkedin.com/in/tyler-partington-40080515b/">
+                            LinkedIn
+                            <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/roof.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/roof.png">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/roof.png" alt="roof" width="690" height="177">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-2293">
+    <div class="cs-container">
+        <div class="cs-top">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a class="cs-logo" aria-label="go back to home" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/6951d8bb73a5e0d53e81931f.png" alt="logo" width="260" height="48">
+                </a>
+                <p class="cs-text">
+                    Give your outdoor spaces a makeover with our awesome hardscaping services! We create beautiful patios, walkways, retaining walls, and outdoor kitchens that mix creativity with know-how, making your relaxation and entertainment spots even better.
+                </p>
+            </div>
+            <!--Sitemap-->
+            <ul class="cs-ul">
+                <li class="cs-li cs-header">
+                    <span class="cs-link">Useful Links</span>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Custom Homes</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Renovations</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Hardscaping</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Ground Work</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Extensions</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Blog</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Career</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Latest News</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Get in Touch</a>
+                </li>
+            </ul>
+            <div class="cs-subscribe-group">
+                <span class="cs-header">Subscribe</span>
+                <p class="cs-text">
+                    Discover the newest offers available exclusively to our buyer subscribers.
+                </p>
+                <form class="cs-form" name="Footer Subscribe" method="post">
+                    <input class="cs-input" aria-label="email" name="email" type="email" placeholder="Email" required>
+                    <button class="cs-button-solid" name="submit" type="submit" data-submit="...Sending">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!--Bottom Copyright And Social-->
+        <div class="cs-bottom">
+            <span class="cs-copyright-group">
+                <span class="cs-copyright">© Copyright 2025 -</span> 
+                <a class="cs-link" href="">Buildstitch</a>
+            </span>
+            <div class="cs-flex">
+                <a href="" class="cs-link">Terms & Conditions</a>
+                <div class="cs-divider" aria-hidden="true"></div>
+                <a href="" class="cs-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+                                
+
+    </body>
+</html>
