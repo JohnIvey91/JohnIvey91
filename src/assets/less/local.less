@@ -275,20 +275,6 @@
         position: relative;
         z-index: 1;
 
-        &:before {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: var(--primary);
-        opacity: 0.05;
-       
-        top: 0;
-        left: 0;
-        z-index: -1;
-            }
-
         .cs-container {
             width: 100%;
             /* changes to 1280px at tablet */
@@ -612,6 +598,7 @@
         }
     }
 }
+                                
 
 
 /*-- -------------------------- -->
@@ -767,7 +754,8 @@
             align-items: center;
             gap: (16/16rem);
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            transition: color 0.3s;
 
             &:before {
                 content: '';
@@ -788,6 +776,9 @@
             margin: 0 0 clamp(3.5rem, 8vw, 6.75rem) 0;
             padding: 0;
             color: var(--bodyTextColor);
+            position: relative;
+            z-index: 2;
+            transition: color 0.3s, opacity 0.3s;
         }
 
         .cs-link {
@@ -803,6 +794,7 @@
             justify-content: space-between;
             gap: (12/16rem);
             position: relative;
+            z-index: 2;
             transition: color 0.3s;
 
             &:hover {
@@ -1173,6 +1165,7 @@
 @media only screen and (min-width: 0rem) {
     #reviews-1672 {
         padding: var(--sectionPadding);
+        background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;
