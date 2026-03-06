@@ -13,7 +13,7 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-		--primary: #E53825;
+		--primary: #c12e1e;
 		--primaryLight: #ffba43;
 		--secondary: #ffba43;
 		--secondaryLight: #ffba43;
@@ -1717,6 +1717,11 @@
                 /* if current color is not black, turns icon white */
                 filter: grayscale(1) brightness(1000%);
                 opacity: 1;
+            }
+
+            /* TikTok icon SVG with hardcoded colors needs invert filter */
+            a[href*="tiktok"] .cs-social-icon {
+                filter: invert(1);
             }
 
             .cs-link, .cs-header, .cs-li-link, .cs-item, .cs-link-content {
