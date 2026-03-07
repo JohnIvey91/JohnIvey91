@@ -1,1 +1,34 @@
-(()=>{var e=document.getElementById("dark-mode-toggle");function a(){document.body.classList.add("dark-mode"),localStorage.setItem("theme","dark"),e&&e.setAttribute("aria-pressed","true")}function o(){document.body.classList.remove("dark-mode"),localStorage.setItem("theme","light"),e&&e.setAttribute("aria-pressed","false")}function d(){let t="light";localStorage.getItem("theme")?t=localStorage.getItem("theme"):window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches&&(t="dark"),t==="dark"?a():o()}d();e&&e.addEventListener("click",()=>{localStorage.getItem("theme")==="light"?a():o()});})();
+(() => {
+  // src/assets/js/dark.js
+  var darkModeToggle = document.getElementById("dark-mode-toggle");
+  function enableDarkMode() {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+    if (darkModeToggle) {
+      darkModeToggle.setAttribute("aria-pressed", "true");
+    }
+  }
+  function disableDarkMode() {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light");
+    if (darkModeToggle) {
+      darkModeToggle.setAttribute("aria-pressed", "false");
+    }
+  }
+  function detectColorScheme() {
+    let theme = "light";
+    if (localStorage.getItem("theme")) {
+      theme = localStorage.getItem("theme");
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      theme = "dark";
+    }
+    theme === "dark" ? enableDarkMode() : disableDarkMode();
+  }
+  detectColorScheme();
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", () => {
+      localStorage.getItem("theme") === "light" ? enableDarkMode() : disableDarkMode();
+    });
+  }
+})();
+//# sourceMappingURL=dark.js.map
