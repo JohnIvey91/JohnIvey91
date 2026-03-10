@@ -167,6 +167,15 @@
                 filter 0.3s,
                 transform 0.3s;
         }
+
+        > .cs-container > .cs-button-solid {
+            margin-top: (8/16rem);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: (8/16rem);
+            line-height: 1.2em;
+        }
     }
 }
 
@@ -263,6 +272,8 @@
         }
 
         .cs-text {
+            margin: 0 0 (16/16rem);
+
             &:last-of-type {
                 margin-bottom: (32/16rem);
             }
@@ -295,18 +306,20 @@
         .cs-button-solid {
             font-size: (16/16rem);
             text-align: center;
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            width: (180/16rem);
+            line-height: (16/16em);
+            width: auto;
             text-decoration: none;
             font-weight: 700;
             /* clips corners of the before element */
             overflow: hidden;
             margin: 0;
             color: #fff;
-            padding: 0;
+            padding: (16/16rem) (32/16rem) (18/16rem);
             background-color: var(--primary);
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: (8/16rem);
             position: relative;
             z-index: 1;
             transition: color 0.3s;
