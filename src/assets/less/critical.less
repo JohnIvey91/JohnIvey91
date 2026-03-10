@@ -88,6 +88,7 @@
 
         .cs-flex-group {
             /* 60px - 220px */
+            margin-top: (60/16rem);
             margin-bottom: clamp(3.75rem, 15.5vw, 13.75rem);
             /* changes on tablet */
             margin-left: (16/16rem);
@@ -122,8 +123,8 @@
             line-height: 1.2em;
             text-align: left;
             width: 100%;
-            /* 32px - 40px */
-            margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
+            /* 12px - 20px */
+            margin: 0 auto clamp(0.75rem, 2vw, 1.25rem) 0;
             color: var(--bodyTextColorWhite);
             position: relative;
         }
@@ -145,14 +146,17 @@
             font-size: (16/16rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            width: (180/16rem);
+            width: (200/16rem);
             text-decoration: none;
             font-weight: 700;
             margin: 0 (20/16rem) (16/16rem) 0;
             color: #fff;
             padding: 0;
             background-color: var(--primary);
-            display: inline-block;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: (8/16rem);
             position: relative;
             z-index: 1;
 
@@ -175,6 +179,12 @@
                     width: 100%;
                 }
             }
+        }
+
+        .cs-button-arrow {
+            width: (20/16rem);
+            height: auto;
+            display: block;
         }
 
         .cs-button-transparent {
