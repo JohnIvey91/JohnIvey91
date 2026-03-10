@@ -1,0 +1,148 @@
+---
+title: "About Us | SC Steel & Concrete Professionals | Shreveport LA"
+description: "Meta description for the page"
+permalink: "/service-areas/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-2285">
+    <div class="cs-container">
+        <span class="cs-int-title">Service Area</span>
+        <!--<p class="cs-text">
+            Platinum Craft Exteriors enhances your home's exterior with quality roofing and stunning finishes.
+        </p>
+    -->
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a class="cs-link cs-active">Service Area</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/6916220fb827254ec85f7b32.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+            srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/6916220fb827254ec85f7b32.jpg">
+        <img decoding="async"
+            src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/6916220fb827254ec85f7b32.jpg"
+            alt="construction" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-2320">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Where We Serve</span>
+            <h2 class="cs-title">Proudly Serving Shreveport-Bossier City and All of Northwest Louisiana</h2>
+            <p class="cs-paragraph-spacer">At SC Steel & Concrete Professionals, we build stronger foundations, driveways, patios, retaining walls,
+                and concrete flatwork for homeowners across the Shreveport-Bossier City metro and all of Northwest
+                Louisiana. Whether you need foundation repair for a home settling in the clay soil, a new stamped
+                concrete patio, or a metal building foundation built to last, we bring engineering expertise and
+                hands-on craftsmanship to every project.</p>
+
+            <p>Our team works with homeowners, builders, and property managers across the region, delivering concrete
+                and foundation solutions reinforced with our SteelX system as standard on every job.</p>
+            <!--                   
+    These "Micro Stitches" are to be placed inside the .cs-content group of Side By Side Stitches.  Typically after the .cs-title or .cs-text. They are used to add more design flair to a Stitch as well as convey more information in a different way.
+-->
+
+            <ul id="list-893" class="cs-ul">
+                <li class="cs-li">
+                    Parkinson’s
+                </li>
+                <li class="cs-li">
+                    MS
+                </li>
+                <li class="cs-li">
+                    Stroke
+                </li>
+                <li class="cs-li">
+                    SCI
+                </li>
+                <li class="cs-li">
+                    Vestibular
+                </li>
+                <li class="cs-li">
+                    Balance/Gait disorders
+                </li>
+                <li class="cs-li">
+                    Carpal Tunnel
+                </li>
+                <li class="cs-li">
+                    Back Pain
+                </li>
+                <li class="cs-li">
+                    Hip/Knee Pain
+                </li>
+                <li class="cs-li">
+                    Shoulder Pain
+                </li>
+            </ul>
+
+
+
+            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+
+        </div>
+        <!--Map Image, pin is made in the Figma then export as one image-->
+        <div class="cs-map">
+            <div class="cs-iframe-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172153.33373691145!2d-122.33979794999999!3d47.608715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1739169879796!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cs-box">
+                <img class="cs-map-icon" decoding="async" loading="lazy"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-pin.svg" alt="icon"
+                    width="40" height="40" aria-hidden="true">
+                <div class="cs-flex">
+                    <span class="cs-header">Service Area</span>
+                    <span class="cs-address">Don't see your town listed? We may still serve your area. Contact us to
+                        find out!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cs-container2">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/house.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/house.jpg">
+            <img loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/house.jpg" alt="house" width="1280"
+                height="243">
+        </picture>
+        <div class="cs-hours">
+            <div class="cs-topper">Working Hours</div>
+            <span class="cs-hours-info">Monday - Saturday: 10:00 - 20:00
+                Sunday: Closed</span>
+        </div>
+    </div>
+</section>
+
+
+
+{% include 'sections/cta.html' %}
+
+{% endblock %}
