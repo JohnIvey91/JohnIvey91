@@ -2,6 +2,15 @@
     var CSbody = document.querySelector("body");
     const CSnavbarMenu = document.querySelector("#cs-navigation");
     const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
+    const CSmobileNav = document.querySelector("#cs-navigation .cs-nav");
+
+    function closeMobileMenu() {
+        CShamburgerMenu.classList.remove("cs-active");
+        CSnavbarMenu.classList.remove("cs-active");
+        CSbody.classList.remove("cs-open");
+        const csUL = document.querySelector('#cs-expanded');
+        csUL.setAttribute('aria-expanded', 'false');
+    }
 
     CShamburgerMenu.addEventListener('click', function() {
         CShamburgerMenu.classList.toggle("cs-active");
@@ -9,6 +18,15 @@
         CSbody.classList.toggle("cs-open");
         // run the function to check the aria-expanded value
         ariaExpanded();
+    });
+
+    document.addEventListener('click', function (event) {
+        const menuIsOpen = CSnavbarMenu.classList.contains('cs-active');
+        if (!menuIsOpen) return;
+
+        if (!CSmobileNav.contains(event.target)) {
+            closeMobileMenu();
+        }
     });
 
     // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
