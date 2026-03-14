@@ -862,7 +862,7 @@
 
         .cs-title {
             max-width: 20ch;
-            color: var(--bodyTextColorWhite);
+            color: var(--headerColor);
             margin: 0;
         }
 
@@ -1159,6 +1159,10 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-2279 {
+            .cs-title {
+                color: var(--bodyTextColorWhite);
+            }
+
             .cs-item {
                 background-color: var(--dark);
                 border-color: rgba(255, 255, 255, .2);
@@ -1186,7 +1190,7 @@
                 }
             }
 
-            .cs-arrow, .cs-icon {
+            .cs-arrow {
                 filter: grayscale(1) brightness(10000%);
             }
         }
@@ -1629,6 +1633,14 @@
         .cs-icon {
             width: (32/16rem);
             height: auto;
+            display: block;
+        }
+
+        .cs-number {
+            font-size: (28/16rem);
+            line-height: 1;
+            font-weight: 900;
+            color: var(--primary);
             display: block;
         }
     }
