@@ -17,7 +17,7 @@ module.exports = {
         instagram: "https://www.instagram.com/steelandconcretepros?igsh=NHRnNDRqOWFzc2Fn",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    domain: "https://www.steelandconcretepros.com",
+    domain: "https://steelandconcretepros.netlify.app",
     // Passing the isProduction variable for use in HTML templates
     isProduction: process.env.ELEVENTY_ENV === "PROD",
 };
