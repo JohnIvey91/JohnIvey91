@@ -13,10 +13,16 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-		--primary: #c12e1e;
+        --primary: #CE410D;
 		--primaryLight: #ffba43;
 		--secondary: #ffba43;
 		--secondaryLight: #ffba43;
+        --surface-0: #ffffff;
+        --surface-1: #f7f7f7;
+        --surface-2: #eef1f4;
+        --surface-dark-1: #111418;
+        --surface-dark-2: #2D2F2E;
+        --overlay-dark-soft: rgba(0, 0, 0, 0.2);
 		--headerColor: #1a1a1a;
 		--bodyTextColor: #4e4b66;
 		--bodyTextColorWhite: #fafbfc;
@@ -25,9 +31,9 @@
 		//--dark: #082032;
         --dark: #1A1A1A;
 		//--medium: #2c394b;
-        --medium: #2B2B2B
+        --medium: #2B2B2B;
 		//--accent: #334756;
-        --accent: #B44335
+        --accent: #B44335;
 
 		/* 13px - 16px */
 		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -38,7 +44,7 @@
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
 		--headerFont: "Oswald", Arial, sans-serif;
-		--bodyFont: "Oswald", Arial, sans-serif;
+        --bodyFont: "Roboto", Arial, sans-serif;
 	}
 
 	html,
@@ -1766,8 +1772,8 @@
 @media only screen and (min-width: 0rem) {    
     #cta-2293 {
         padding: var(--sectionPadding);
-        background-color: #111418;
-        border-bottom: 1px solid #2D2F2E;
+        background-color: var(--surface-dark-1);
+        border-bottom: 1px solid var(--surface-dark-2);
         position: relative;
         z-index: 1;
         transition: background-color 0.3s;
@@ -1815,7 +1821,7 @@
             margin: 0;
             padding: 0 (24/16rem);
             background-color: var(--primary);
-            color: var(--headerColor);
+            color: var(--bodyTextColorWhite);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -1834,6 +1840,7 @@
             }
 
             &:hover {
+                color: var(--headerColor);
                 &:before {
                     width: 100%;
                 }
@@ -1850,23 +1857,24 @@
             padding: 0;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            column-gap: clamp(.75rem, 2.5vw, 1.25rem);
             /* 32px - 48px */
-            row-gap: clamp(2rem, 5vw, 3rem);
+            row-gap: clamp(1.25rem, 4vw, 2rem);
         }
 
         .cs-item {
             list-style: none;
             display: flex;
-            grid-column: span 12;
+            grid-column: span 6;
             flex-direction: column;
             align-items: flex-start;
-            gap: (24/16rem);
+            gap: (16/16rem);
         }
 
         .cs-wrapper {
             width: (72/16rem);
             height: (72/16rem);
-            border: 1px solid #2D2F2E;
+            border: 1px solid var(--surface-dark-2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2025,7 +2033,7 @@
     #cs-footer-2293 {
         padding: var(--sectionPadding);
         padding-bottom: (24/16rem);
-        background-color: #111418;
+        background-color: var(--surface-dark-1);
         overflow: hidden;
 
         .cs-container {
@@ -2134,7 +2142,7 @@
             margin: 0;
             padding: 0 (16/16rem);
             background-color: var(--primary);
-            color: var(--headerColor);
+            color: var(--bodyTextColorWhite);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -2153,6 +2161,7 @@
             }
 
             &:hover {
+                color: var(--headerColor);
                 &:before {
                     width: 100%;
                 }
@@ -2175,7 +2184,7 @@
                 content: '';
                 width: 100vw;
                 height: 1px;
-                background: #2D2F2E;
+                background: var(--surface-dark-2);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -2198,6 +2207,17 @@
             background-color: var(--bodyTextColorWhite);
             opacity: .8;
             display: block;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible,
+        select:focus-visible,
+        .cs-link:focus-visible,
+        .cs-button-solid:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
         }
     }
 }
@@ -2235,7 +2255,7 @@
                 content: '';
                 width: 200vw;
                 height: 1px;
-                background: #2D2F2E;
+                background: var(--surface-dark-2);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -2253,7 +2273,7 @@
             width: 45%;
             /* 24px - 48px */
             padding-left: clamp(1.5rem, 2.5vw, 3rem);
-            border-left: 1px solid #2D2F2E;
+            border-left: 1px solid var(--surface-dark-2);
             justify-content: center;
             order: 2;
         }
@@ -2300,7 +2320,7 @@
                 content: '';
                 width: 1px;
                 height: 100vw;
-                background: #2D2F2E;
+                background: var(--surface-dark-2);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -2320,7 +2340,7 @@
                 content: '';
                 width: 1px;
                 height: 100vw;
-                background: #2D2F2E;
+                background: var(--surface-dark-2);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -2341,6 +2361,21 @@
         #cs-footer-2293 {
             background-color: rgba(0, 0, 0, .6);
         }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    .cs-text {
+        font-size: 1.0625rem;
     }
 }
                                 

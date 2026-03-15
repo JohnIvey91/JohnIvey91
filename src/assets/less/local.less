@@ -12,7 +12,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #services-1167 {
-        background-color: #fff;
+        background-color: var(--surface-0);
         padding: var(--sectionPadding);
 
         .cs-container {
@@ -58,7 +58,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            background-color: #f7f7f7;
+            background-color: var(--surface-1);
             width: 100%;
             list-style: none;
             text-align: left;
@@ -883,6 +883,7 @@
             /* place this in a variable to reuse for the s-icon-wrapper placement */
             --itemPadding: clamp(1rem, 3.5vw, 3rem);
             width: 100%;
+            min-height: clamp(17rem, 40vw, 22rem);
             text-align: left;
             list-style: none;
             margin: 0;
@@ -1123,6 +1124,27 @@
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    #services-2279 {
+        .cs-item,
+        .cs-icon-wrapper,
+        .cs-icon,
+        .cs-link,
+        .cs-arrow,
+        .cs-background {
+            transition: none !important;
+        }
+
+        .cs-item:hover {
+            .cs-icon-wrapper,
+            .cs-icon,
+            .cs-arrow {
+                transform: none !important;
+            }
+        }
+    }
+}
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #services-2279 {
@@ -1174,6 +1196,10 @@
                             opacity: .9;
                         }
                     }
+
+                    .cs-icon {
+                        filter: brightness(0) invert(1);
+                    }
                 }
             }
 
@@ -1188,6 +1214,10 @@
                     opacity: .3;
                     transition: background-color .3s, opacity .3s;
                 }
+            }
+
+            .cs-icon {
+                transition: transform .5s, filter .3s;
             }
 
             .cs-arrow {
@@ -1205,7 +1235,7 @@
 @media only screen and (min-width: 0rem) {
     #RPsbs-2278,
     #RPsbsr-2278 {
-        background-color: #f7f7f7;
+        background-color: var(--surface-1);
         padding: var(--sectionPadding);
         /* clips the green background pseudo from overflowing the section */
         overflow: hidden;
@@ -1245,7 +1275,7 @@
                 content: "";
                 width: 100vw;
                 height: 100%;
-                background: #fff;
+                background: var(--surface-0);
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -1594,7 +1624,7 @@
             width: (72/16rem);
             height: (72/16rem);
             background-color: rgba(206, 65, 13, 0.05);
-            border-radius: (16/16rem) 0 (16/16rem) 0;
+            border-radius: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1683,11 +1713,16 @@
             }
 
             .cs-picture {
-                background-color: var(--accent);
+                background-color: var(--surface-dark-2);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+            }
+
+            .cs-number {
+                color: var(--primaryLight);
             }
 
             .cs-arrow {
-                opacity: 0.5;
+                opacity: 0.7;
             }
         }
     }
@@ -1701,7 +1736,7 @@
 @media only screen and (min-width: 0rem) {
     #reviews-1672 {
         padding: var(--sectionPadding);
-        //background-color: #f7f7f7;
+        background-color: var(--surface-0);
 
         .cs-container {
             width: 100%;
@@ -1743,7 +1778,7 @@
             /* 20px - 40px top & bottom */
             /* 20px - 40px left & right */
             padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
-            background-color: #f7f7f7;
+            background-color: var(--surface-1);
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
             display: flex;
@@ -1848,6 +1883,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-1672 {
+            background-color: var(--surface-dark-1);
+
             .cs-title,
             .cs-review,
             .cs-name {
@@ -1855,7 +1892,7 @@
             }
 
             .cs-item {
-                background-color: rgba(0, 0, 0, .2);
+                background-color: var(--surface-dark-2);
             }
 
             .cs-job {

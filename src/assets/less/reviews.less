@@ -123,6 +123,18 @@
             width: (96/16rem);
             height: (16/16rem);
         }
+
+        .cs-button-solid {
+            display: inline-flex;
+            align-items: center;
+            gap: (8/16rem);
+
+            .cs-button-arrow {
+                width: (20/16rem);
+                height: (20/16rem);
+                flex-shrink: 0;
+            }
+        }
     }
 }
 
@@ -148,6 +160,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-67 {
+            background-color: var(--surface-dark-1);
+
             .cs-title,
             .cs-text,
             .cs-item-text,
@@ -156,7 +170,11 @@
             }
 
             .cs-item {
-                background: rgba(0, 0, 0, 0.2);
+                background: var(--surface-dark-2);
+            }
+
+            .cs-item-text {
+                border-bottom-color: rgba(255, 255, 255, 0.12);
             }
 
             .cs-desc {

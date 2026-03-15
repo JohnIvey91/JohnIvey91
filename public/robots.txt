@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://www.steelandconcretepros.com/sitemap.xml
+Sitemap: https://steelandconcretepros.netlify.app/sitemap.xml
  
