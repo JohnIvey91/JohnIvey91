@@ -159,11 +159,11 @@
 			width: 0;
 			transition: width 0.3s;
 		}
-	}
 
-    .cs-button-arrow {
-        display: none;
-    }
+		.cs-button-arrow {
+			display: none;
+		}
+	}
 
 	.cs-button-outline {
 		z-index: 1;
@@ -1825,6 +1825,7 @@
             margin: 0;
             padding: 0 (24/16rem);
             background-color: var(--primary);
+            overflow: hidden;
             color: var(--bodyTextColorWhite);
             display: inline-block;
             position: relative;
@@ -1886,8 +1887,8 @@
         }
 
         .cs-icon {
-            /* tint source icons to primary red */
-            filter: brightness(0) saturate(100%) invert(20%) sepia(93%) saturate(2097%) hue-rotate(347deg) brightness(95%) contrast(86%);
+            /* tint source icons to --primary #CE410D */
+            filter: brightness(0) saturate(100%) invert(43%) sepia(100%) saturate(490%) hue-rotate(338deg) brightness(88%);
         }
 
         .cs-info {
@@ -2146,6 +2147,7 @@
             margin: 0;
             padding: 0 (16/16rem);
             background-color: var(--primary);
+            overflow: hidden;
             color: var(--bodyTextColorWhite);
             display: inline-block;
             position: relative;
