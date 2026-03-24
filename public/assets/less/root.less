@@ -13,10 +13,11 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-        --primary: #CE410D;
-		--primaryLight: #ffba43;
-		--secondary: #ffba43;
-		--secondaryLight: #ffba43;
+        --primary: #C92A28;
+        --primaryLight: #E63935;
+        --primaryDark: #A31D1B;
+		--secondary: #C92A28;
+		--secondaryLight: #E63935;
         --surface-0: #ffffff;
         --surface-1: #f7f7f7;
         --surface-2: #eef1f4;
@@ -44,7 +45,7 @@
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
 		--headerFont: "Oswald", Arial, sans-serif;
-        --bodyFont: "Roboto", Arial, sans-serif;
+        --bodyFont: "Inter", Arial, sans-serif;
 	}
 
 	html,
@@ -159,11 +160,11 @@
 			width: 0;
 			transition: width 0.3s;
 		}
-	}
 
-    .cs-button-arrow {
-        display: none;
-    }
+		.cs-button-arrow {
+			display: none;
+		}
+	}
 
 	.cs-button-outline {
 		z-index: 1;
@@ -1825,6 +1826,7 @@
             margin: 0;
             padding: 0 (24/16rem);
             background-color: var(--primary);
+            overflow: hidden;
             color: var(--bodyTextColorWhite);
             display: inline-block;
             position: relative;
@@ -1886,8 +1888,8 @@
         }
 
         .cs-icon {
-            /* tint source icons to primary red */
-            filter: brightness(0) saturate(100%) invert(20%) sepia(93%) saturate(2097%) hue-rotate(347deg) brightness(95%) contrast(86%);
+            /* tint source icons to --primary #C92A28 */
+            filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(430%) hue-rotate(323deg) brightness(91%);
         }
 
         .cs-info {
@@ -2146,6 +2148,7 @@
             margin: 0;
             padding: 0 (16/16rem);
             background-color: var(--primary);
+            overflow: hidden;
             color: var(--bodyTextColorWhite);
             display: inline-block;
             position: relative;
