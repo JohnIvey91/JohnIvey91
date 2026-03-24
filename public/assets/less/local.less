@@ -143,6 +143,7 @@
             justify-content: flex-start;
             align-items: center;
             text-decoration: none;
+            font-family: var(--headerFont);
             font-size: (16 / 16rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -1013,6 +1014,7 @@
 
         .cs-link {
             text-decoration: none;
+            font-family: var(--headerFont);
             font-size: (16/16rem);
             line-height: 1.2em;
             text-transform: uppercase;
@@ -1837,6 +1839,7 @@
             width: (96/16rem);
             height: auto;
         }
+        
 
         .cs-verified {
             width: (18/16rem);
@@ -1848,6 +1851,29 @@
             line-height: 1.6em;
             margin: 0;
             color: var(--bodyTextColor);
+            overflow: hidden;
+            overflow-y: scroll;
+            height: 7.14285714em;
+            padding-right: 0.71428571em;
+
+            /* Always show scrollbar */
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 3px;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.5);
+                }
+            }
         }
 
         .cs-button-solid {
