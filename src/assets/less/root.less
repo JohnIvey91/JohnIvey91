@@ -16,8 +16,8 @@
         --primary: #C92A28;
         --primaryLight: #E63935;
         --primaryDark: #A31D1B;
-		--secondary: #C92A28;
-		--secondaryLight: #E63935;
+		--secondary: #4a4a4a;
+		--secondaryLight: #FFD966;
         --surface-0: #ffffff;
         --surface-1: #f7f7f7;
         --surface-2: #eef1f4;
@@ -88,7 +88,7 @@
 		line-height: 1.2em;
 		text-align: inherit;
 		max-width: 43.75rem;
-		margin: 0 0 1rem 0;
+		//margin: 0 0 1rem 0;
 		color: var(--headerColor);
 		position: relative;
 	}
@@ -102,6 +102,33 @@
 		margin: 0;
 		color: var(--bodyTextColor);
         opacity: 0.95;
+	}
+
+	.cs-divider {
+		display: flex;
+		height: (8/16rem);
+		justify-content: space-between;
+		margin-top: (24/16rem);
+		position: relative;
+		width: (160/16rem);
+		z-index: 1;
+
+		&:before, &:after {
+			content: "";
+			display: block;
+			height: 100%;
+			opacity: 1;
+		}
+
+		&:before {    
+			background: var(--secondary);
+			width: (40/16rem);
+		}
+
+		&:after {
+			background: var(--primary);
+			width: (116/16rem);
+		}
 	}
 }
 

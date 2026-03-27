@@ -41,6 +41,35 @@
             max-width: 20ch;
         }
 
+        .cs-divider {
+            display: flex;
+            height: (8/16rem);
+            justify-content: space-between;
+            margin-top: (24/16rem);
+            position: relative;
+            width: (160/16rem);
+            z-index: 1;
+
+            &:before, &:after {
+                content: "";
+                display: block;
+                height: 100%;
+                opacity: 1;
+            }
+
+            &:before {    
+                background: var(--secondary);
+                width: (40/16rem);
+            }
+
+            &:after {
+                background: var(--primary);
+                width: (116/16rem);
+            }
+        }
+
+
+
         .cs-card-group {
             display: grid;
             align-items: stretch;
@@ -273,6 +302,10 @@
             max-width: 25ch;
         }
 
+        .cs-divider {
+            margin-bottom: (24/16rem);
+        }
+
         .cs-text {
             margin: 0 0 (16/16rem);
 
@@ -392,6 +425,10 @@
     #sbs-2276 {
         .cs-container {
             max-width: (1280/16rem);
+        }
+
+        .cs-divider {
+            margin-bottom: 0;
         }
 
         .cs-content {
@@ -536,6 +573,10 @@
 
         .cs-title {
             max-width: 25ch;
+        }
+
+        .cs-divider {
+            margin-bottom: (24/16rem);
         }
 
         .cs-text {
@@ -723,6 +764,10 @@
     #sbs-2277 {
         .cs-container {
             max-width: (1280/16rem);
+        }
+
+        .cs-divider {
+            margin-bottom: 0;
         }
 
         .cs-card-group {
@@ -2001,7 +2046,11 @@
         .cs-title {
             /* 20 characters wide including spaces */
             max-width: 20ch;
-            margin: 0 auto (32/16rem) 0;
+            //margin: 0 auto (32/16rem) 0;
+        }
+
+        .cs-divider {
+            margin-bottom: (24/16rem);
         }
 
         .cs-faq-group {
@@ -2193,6 +2242,10 @@
             justify-content: space-between;
             align-items: flex-start;
             gap: (20/16rem);
+        }
+
+        .cs-divider {
+            margin-bottom: 0;
         }
 
         .cs-content {
