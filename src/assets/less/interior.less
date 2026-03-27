@@ -40,7 +40,7 @@
             font-weight: 500;
             line-height: 1.2em;
             text-align: inherit;
-            margin: 0 0 calc(16/16 * 1rem);
+            margin: 0 0 3rem;
             color: var(--bodyTextColorWhite);
             position: relative;
         }
@@ -100,6 +100,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-transform: uppercase;
 
             &:last-of-type {
                 /* remove the chevron on the last list item */
@@ -220,7 +221,7 @@
   }
   #content-page-1533 .cs-title {
     font-size: var(--headerFontSize);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2em;
     text-align: inherit;
     text-transform: uppercase;
@@ -235,7 +236,7 @@
   #content-page-1533 h4,
   #content-page-1533 h5,
   #content-page-1533 h6 {
-    font-weight: 500;
+    font-weight: 700;
     text-align: inherit;
     margin: 0 0 1rem 0;
     color: var(--headerColor);
@@ -306,6 +307,28 @@
     display: block;
     top: 0.625rem;
     left: -0.75rem;
+  }
+  #content-page-1533 table {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    border-collapse: collapse;
+    font-size: (12/16rem);
+  }
+  #content-page-1533 table th,
+  #content-page-1533 table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: var(--bodyTextColor);
+  }
+  #content-page-1533 table th {
+    background-color: #f2f2f2;
+    color: var(--headerColor);
+    font-family: var(--bodyFont);
+    font-weight: 700;
+  }
+  #content-page-1533 table tr:nth-child(even) {
+    background-color: #f9f9f9;
   }
   #content-page-1533 img {
     width: 100%;

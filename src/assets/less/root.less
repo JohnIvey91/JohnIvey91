@@ -298,6 +298,7 @@
 		font-family: var(--headerFont);
 		line-height: 1.2em;
 		color: var(--headerColor);
+        text-transform: uppercase;
 	}
 
 	p,
@@ -1019,6 +1020,7 @@
     #cs-navigation {
         .cs-ul-wrapper {
             width: 100%;
+            height: 100vh;
             opacity: 0;
             background-color: #fff;
             box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
@@ -1088,10 +1090,11 @@
         }
 
         .cs-li-link {
-            /* 16px - 24px */
-            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            /* 24px */
+            font-size: (24/16rem);
+            font-weight: 400;
             text-transform: uppercase;
-            line-height: 1.2em;
+            line-height: (28.8/16rem);
             text-decoration: none;
             margin: 0;
             color: var(--headerColor);
@@ -1173,8 +1176,9 @@
 
         .cs-li-link {
             &.cs-drop-link {
-                /* 14px - 16px */
-                font-size: clamp(.875rem, 2vw, 1.25rem);
+                /* 20px */
+                font-size: (20/16rem);
+                line-height: (24/16rem);
                 text-transform: uppercase;
                 color: #fff;
             }
