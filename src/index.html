@@ -38,17 +38,24 @@ tags: "sitemap"
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Shreveport's Concrete Expert</span>
-            <h1 class="cs-title">TRUSTED CONCRETE PROFESSIONALS </h1>
+            <h1 class="cs-title">Concrete & Foundation<br>Experts in Shreveport</h1>
             <p class="cs-text">
-                Serving Shreveport-Bossier City and Northwest Louisiana. From foundation repair to driveways, patios,
-                and more. We get it done right the first time.
+                From foundation repair to driveways, patios, and more—we serve Shreveport-Bossier City and all of Northwest Louisiana. Done right the first time, every time.
             </p>
-            <a href="/contact/" class="cs-button-solid">
-                Get Your Free Estimate
-                <img class="cs-button-arrow"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async"
-                    alt="arrow" width="20" height="20" aria-hidden="true">
-            </a>
+            <div class="cs-button-group">
+                <a href="/contact/" class="cs-button-solid">
+                    Get Your Free Estimate
+                    <img class="cs-button-arrow"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async"
+                        alt="arrow" width="20" height="20" aria-hidden="true">
+                </a>
+                <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid cs-button-secondary">
+                    <svg class="cs-phone-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    {{ client.phoneFormatted }}
+                </a>
+            </div>
         </div>
         <!-- Person, to make your own crop of a person, visit https://www.remove.bg to do it for you -->
         <!-- 
@@ -59,12 +66,6 @@ tags: "sitemap"
         </picture> -->
     </div>
 
-    <!--SVG V Graphic-->
-    
-    <img class="cs-graphic" decoding="async"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/v-graphic2.svg" alt="graphic" width="1920"
-        height="163" aria-hidden="true">
-
     <!-- Background Image, also BG Image is set in CSS at 1600px wide for parallax effect -->
     <picture class="cs-background">
         <source media="(max-width: 600px)"
@@ -72,7 +73,7 @@ tags: "sitemap"
         <source media="(min-width: 601px)"
             srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69b4faaeeba48704243d7de3.webp">
         <img decoding="async"
-            src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69b045bdc3299e39cc2fa5ff.jpg" alt="garage"
+            src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69b045bdc3299e39cc2fa5ff.jpg" alt="concrete driveway installation in Shreveport Louisiana"
             width="2250" height="1500" aria-hidden="true">
     </picture>
 
@@ -88,7 +89,6 @@ tags: "sitemap"
         <div class="cs-content">
             <span class="cs-topper">Our Services</span>
             <h2 class="cs-title">WHAT WE DO</h2>
-            <div class="cs-divider" aria-hidden="true"></div>
         </div>
         
         <ul class="cs-card-group">
@@ -237,10 +237,9 @@ tags: "sitemap"
         </div>
         <div class="cs-content">
             <span class="cs-topper">Who We Are</span>
-            <h2 class="cs-title">SHREVEPORT'S CONCRETE & FOUNDATION AUTHORITY</h2>
-            <div class="cs-divider" aria-hidden="true"></div>
+            <h2 class="cs-title">SHREVEPORT'S TRUSTED CONCRETE & FOUNDATION TEAM</h2>
             <p class="cs-text">
-                With over 20 years of experience, we are Shreveport's go-to experts for concrete and foundation work. We combine engineering precision with local know-how to deliver results that last.
+                With 15+ years in the business, we've become Shreveport's go-to team for concrete and foundation work. We bring engineering precision and local know-how to every project—so your results last.
             </p>
          
                 <ul class="cs-ul">
@@ -259,17 +258,17 @@ tags: "sitemap"
                     <img class="cs-image" loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69b7366b0c9f1ebe111bc2c7.png" alt="Accreditation Badge" width="608" height="406">
                 </div>
                 <div class="cs-button-box">
-                    <a class="cs-link" href="tel:3183830070">
+                    <a class="cs-link" href="tel:{{ client.phoneForTel }}">
                         <picture class="cs-icon-wrapper">
                             <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone.svg" alt="icon"
                                 width="24" height="24">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-link-content">Need Help?</span>
-                            <span class="cs-phone">(318) 383-0070</span>
+                            <span class="cs-phone">{{ client.phoneFormatted }}</span>
                         </div>
                     </a>
-                    <a class="cs-link" href="tel:3183830070">
+                    <a class="cs-link" href="tel:{{ client.phoneForTel }}">
                         <picture class="cs-img-wrapper">
                             <img class="cs-img" loading="lazy" decoding="async" src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69c6cd4931ffeb6011e6f9ba.png" alt="profile"
                                 width="52" height="52">
@@ -293,9 +292,8 @@ tags: "sitemap"
                 <div class="cs-flex">
                     <span class="cs-topper">Why Choose Us</span>
                     <h2 class="cs-title">CONCRETE ENGINEERED TO OUTLAST THE REST</h2>
-                    <div class="cs-divider" aria-hidden="true"></div>
                     <p class="cs-text">
-                       You need a foundation that stands the test of time. We apply strict engineering standards and heavy-duty SteelX reinforcement on every single job, ensuring you never have to worry about failing concrete again.
+                       Your foundation needs to stand the test of time. That's why we apply strict engineering standards and include SteelX reinforcement on every job—so you never have to worry about failing concrete.
                     </p>
                     <ul class="cs-ul">
                         <li class="cs-li">
@@ -303,7 +301,7 @@ tags: "sitemap"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg"
                                 loading="lazy" decoding="async" alt="diamond" width="11" height="11">
                             <p class="cs-item-text">
-                                <strong>Zero Shortcuts:</strong>  Every project is executed to rigorous engineering specifications. We do it right, or we don't do it at all.
+                                <strong>No Shortcuts:</strong> Every project follows rigorous engineering specs. We do it right or we don't do it at all.
                             </p>
                         </li>
                         <li class="cs-li">
@@ -311,7 +309,7 @@ tags: "sitemap"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg"
                                 loading="lazy" decoding="async" alt="diamond" width="11" height="11">
                             <p class="cs-item-text">
-                                <strong>SteelX Standard:</strong> Steel reinforcement isn't an expensive upsell for us, it's mandatory. It goes into every pour to guarantee structural integrity.
+                                <strong>SteelX in Every Pour:</strong> Steel reinforcement isn't an upsell—it's standard. Every pour gets it because structural integrity isn't optional.
                             </p>
                         </li>
                         <li class="cs-li">
@@ -319,14 +317,14 @@ tags: "sitemap"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/diamond.svg"
                                 loading="lazy" decoding="async" alt="diamond" width="11" height="11">
                             <p class="cs-item-text">
-                                <strong>Local Accountability:</strong> We live and work in Shreveport. Our reputation is poured into every job, and we stand firmly behind our craftsmanship.
+                                <strong>Local & Accountable:</strong> We live and work right here in Shreveport. Our reputation rides on every job, and we stand behind our work.
 
                             </p>
                         </li>
 
                     </ul>
-                    <a href="/about/" class="cs-button-solid">
-                        GET A FREE QUOTE
+                    <a href="/contact/" class="cs-button-solid">
+                        Get Your Free Estimate
                         <img class="cs-button-arrow"
                             src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg"
                             decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
@@ -371,77 +369,12 @@ tags: "sitemap"
         height="160" loading="lazy">-->
 </section>
 
-<!-- ============================================ -->
-<!--             Side By Side - About Us          -->
-<!--               (HIDDEN FOR NOW)               -->
-<!-- ============================================ -->
-
-{# HIDDEN: About Us Section
-<section id="sbs-2276">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)"
-                    srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69265b8d1dd8c90ea280c239.png">
-                <source media="(min-width: 601px)"
-                    srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69265b8d1dd8c90ea280c239.png">
-                <img aria-hidden="true" decoding="async"
-                    src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69265b8d1dd8c90ea280c239.png"
-                    alt="construction site" width="413" height="492" loading="lazy">
-            </picture>
-            <a href="/about/" class="cs-button-solid">
-                OUR STORY
-                <img class="cs-button-arrow"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async"
-                    alt="arrow" width="20" height="20" aria-hidden="true">
-            </a>
-        </div>
-        <div class="cs-content">
-            <div class="cs-header">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">WE STAND BEHIND EVERYTHING WE POUR</h2>
-                <div class="cs-divider" aria-hidden="true"></div>
-            </div>
-            <div class="cs-wrapper">
-                <div class="cs-flex">
-                    <p class="cs-text">
-                        SC Steel & Concrete Professionals was founded by Tyler Partington, a Shreveport native with a background in engineering. That means every project we take on is planned with the same precision and standards you'd expect from a professional engineer, not just a contractor.
-                    </p>
-                    <p class="cs-text">
-                        Our goal is simple: do great work you can trust. We work with you from the first call all the
-                        way through project completion.
-                    </p>
-                    <span class="cs-name">Tyler Partington</span>
-                    <span class="cs-desc">Founder, SC Steel & Concrete Professionals</span>
-                    <a href="/about/" class="cs-button-solid">
-                        ABOUT US
-                        <img class="cs-button-arrow"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg"
-                            decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
-                    </a>
-                </div>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)"
-                        srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608196d03ee3f79546591.png">
-                    <source media="(min-width: 601px)"
-                        srcset="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608196d03ee3f79546591.png">
-                    <img aria-hidden="true" decoding="async"
-                        src="https://assets.cdn.filesafe.space/Ku36gc9Cxkdn9PR1iSPv/media/69a608196d03ee3f79546591.png"
-                        alt="construction site" width="362" height="400" loading="lazy">
-                </picture>
-            </div>
-        </div>
-    </div>
-</section>
-#}
-
 <section id="services-2279">
     <div class="cs-container">
         <!-- Left Content Section-->
         <div class="cs-content">
             <span class="cs-topper">Our Services</span>
-            <h2 class="cs-title">Uncompromising Steel & Concrete Solutions</h2>
-            <div class="cs-divider" aria-hidden="true"></div>
+            <h2 class="cs-title">STEEL & CONCRETE DONE RIGHT</h2>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -605,7 +538,6 @@ tags: "sitemap"
     <div class="cs-header">
         <span class="cs-topper">Our Standard</span>
         <h2 class="cs-title">BUILD IT RIGHT THE <br> FIRST TIME</h2>
-        <div class="cs-divider" aria-hidden="true"></div>
     </div>
     <div class="cs-container">
         <!-- Left Image Section -->
@@ -622,10 +554,7 @@ tags: "sitemap"
         <div class="cs-content">
             <h3 class="cs-h3">CONCRETE FLATWORK EXPERTS</h3>
             <p class="cs-text">
-                Your driveway, patio, and sidewalks take constant punishment from Louisiana's heat, rain, and shifting
-                clay soil. We pour concrete flatwork that handles all of it. From new installations to full
-                replacements, we handle every detail with proper ground prep and our SteelX reinforcement system built
-                into every pour.
+                Louisiana's heat, rain, and shifting clay soil are tough on concrete. That's why we pour flatwork built to handle it all—from new driveways to full replacements. Every project gets proper ground prep and SteelX reinforcement as standard.
             </p>
             <span class="cs-heading">Services Include:</span>
             <ul class="cs-ul">
@@ -660,7 +589,7 @@ tags: "sitemap"
                     <p class="cs-item-text">Concrete repair and resurfacing</p>
                 </li>
             </ul>
-            <a class="cs-button-solid" href="/contact/">Get Free Quote
+            <a class="cs-button-solid" href="/contact/">Get Your Free Estimate
                 <img class="cs-button-arrow"
                     src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async"
                     alt="arrow" width="20" height="20" aria-hidden="true">
@@ -690,10 +619,7 @@ tags: "sitemap"
         <div class="cs-content">
             <h3 class="cs-h3">FOUNDATION REPAIR</h3>
             <p class="cs-text">
-                When doors stick, walls crack, and floors slope, the problem is underneath your home. Louisiana's
-                expansive clay soil puts constant pressure on foundations, and it only gets worse with time. We
-                stabilize and level existing foundations with steel piers, and we design and pour new foundations
-                engineered for the ground they sit on.
+                Sticking doors, cracked walls, sloping floors—these are signs of foundation trouble. Louisiana's clay soil puts constant pressure on your foundation, and it only gets worse over time. We stabilize and level foundations with steel piers, and design new ones engineered for our local soil conditions.
             </p>
             <span class="cs-heading">Services Include:</span>
             <ul class="cs-ul">
@@ -734,8 +660,7 @@ tags: "sitemap"
                     <p class="cs-item-text">Metal Building Foundations</p>
                 </li>
             </ul>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="tel:{{client.phoneForTel}}">Call
-                US Today
+            <a class="cs-button-solid" aria-label="call us today" href="tel:{{ client.phoneForTel }}">Call Us Today
                 <img class="cs-button-arrow"
                     src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async"
                     alt="arrow" width="20" height="20" aria-hidden="true">
@@ -754,7 +679,6 @@ tags: "sitemap"
         <div class="cs-content">
             <span class="cs-topper">Our Process</span>
             <h2 class="cs-title">HOW IT WORKS</h2>
-            <div class="cs-divider" aria-hidden="true"></div>
             
         </div>
         <ul class="cs-card-group">
@@ -762,32 +686,32 @@ tags: "sitemap"
                 <picture class="cs-picture">
                     <span class="cs-number" aria-hidden="true">1</span>
                 </picture>
-                <h3 class="cs-h3">GET A TRANSPARENT QUOTE</h3>
+                <h3 class="cs-h3">GET YOUR FREE QUOTE</h3>
                 <p class="cs-item-p">
-                    Reach out today. We'll visit your site, assess the scope, and provide a straightforward, no-nonsense price. No hidden fees, no runaround.
+                    Give us a call or fill out the form. We'll visit your site, assess the work, and give you a straightforward price—no hidden fees, no surprises.
                 </p>
             </li>
             <li class="cs-item">
                 <picture class="cs-picture">
                     <span class="cs-number" aria-hidden="true">2</span>
                 </picture>
-                <h3 class="cs-h3">WE ENGINEER THE PLAN</h3>
+                <h3 class="cs-h3">WE PLAN IT RIGHT</h3>
                 <p class="cs-item-p">
-                    Every job is meticulously reviewed before ground is broken. We analyze soil conditions, load requirements, and base prep to ensure flawless execution.
+                    Before any work begins, we review the details—soil conditions, load requirements, and base prep. Proper planning means proper results.
                 </p>
             </li>
             <li class="cs-item">
                 <picture class="cs-picture">
                     <span class="cs-number" aria-hidden="true">3</span>
                 </picture>
-                <h3 class="cs-h3">BUILT TO LAST. BACKED BY US.</h3>
+                <h3 class="cs-h3">WE BUILD IT TO LAST</h3>
                 <p class="cs-item-p">
-                    With SteelX reinforcement standard in every pour, we finish to exact specs. We walk the final product with you because our name stays on it long after we leave.
+                    SteelX reinforcement goes in every pour. We finish to spec and walk the job with you—because our name stays on it long after we're gone.
                 </p>
             </li>
         </ul>
         <a href="/contact/" class="cs-button-solid">
-            GET STARTED
+            Get Your Free Estimate
             <img class="cs-button-arrow"
                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async"
                 alt="arrow" width="20" height="20" aria-hidden="true">
@@ -842,7 +766,6 @@ tags: "sitemap"
         <div class="cs-content">
             <span class="cs-topper">FAQ</span>
             <h2 class="cs-title">COMMON QUESTIONS</h2>
-            <div class="cs-divider" aria-hidden="true"></div>
             <ul class="cs-faq-group">
                 <!-- Active class added as default -->
                 <li class="cs-faq-item active">
@@ -917,7 +840,6 @@ tags: "sitemap"
         <div class="cs-content">
             <span class="cs-topper">Google Reviews</span>
             <h2 class="cs-title">WHAT OUR CUSTOMERS SAY</h2>
-            <div class="cs-divider" aria-hidden="true"></div>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">

@@ -378,6 +378,7 @@
 
         .cs-title {
             max-width: 30ch;
+            margin-bottom: (24/16rem);
         }
 
         .cs-divider {
@@ -1020,17 +1021,11 @@
 
         .cs-title {
             max-width: 20ch;
-        }
-
-        .cs-divider {
-            margin-top: (24/16rem);
-            margin-bottom: (24/16rem);
+            margin: 0 0 (24/16rem) 0;
         }
 
         .cs-text {
-            &:last-of-type {
-                margin-bottom: (32/16rem);
-            }
+            margin-bottom: (24/16rem);
         }
 
         .cs-ul {
@@ -1263,7 +1258,7 @@
         }
 
         .cs-title {
-            margin: 0;
+            margin: 0 0 (24/16rem) 0;
         }
 
         .cs-wrapper {
@@ -2083,6 +2078,7 @@
 @media only screen and (min-width: 0rem) {
     #steps-889 {
         padding: var(--sectionPadding);
+        background-color: var(--dark);
 
         .cs-container {
             width: 100%;
@@ -2103,6 +2099,14 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
+        }
+
+        .cs-topper {
+            color: #ffba43;
+        }
+
+        .cs-title {
+            color: #fff;
         }
 
         .cs-text {
@@ -2174,7 +2178,7 @@
             margin-bottom: (24/16rem);
             width: (72/16rem);
             height: (72/16rem);
-            background-color: rgba(206, 65, 13, 0.05);
+            background-color: var(--primary);
             border-radius: 0;
             display: flex;
             justify-content: center;
@@ -2186,7 +2190,7 @@
             line-height: 1.2em;
             text-align: inherit;
             margin: 0 0 (12/16rem) 0;
-            color: var(--headerColor);
+            color: #fff;
         }
 
         .cs-item-p {
@@ -2194,7 +2198,7 @@
             line-height: 1.5em;
             text-align: inherit;
             margin: 0;
-            color: var(--bodyTextColor);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .cs-arrow {
@@ -2222,7 +2226,7 @@
             line-height: 1;
             font-weight: 500;
             font-family: var(--headerFont);
-            color: var(--primary);
+            color: #fff;
             display: block;
         }
     }
@@ -2288,7 +2292,7 @@
 @media only screen and (min-width: 0rem) {
     #reviews-1672 {
         padding: var(--sectionPadding);
-        background-color: var(--surface-1);
+        background-color: #fff;
 
         .cs-container {
             width: 100%;
@@ -2332,6 +2336,7 @@
             flex-direction: column;
             gap: (12/16rem);
             box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--primary);
             transition: box-shadow 0.3s ease, transform 0.3s ease;
 
             &:hover {
