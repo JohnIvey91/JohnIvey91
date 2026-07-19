@@ -66,15 +66,19 @@
         }
 
         .cs-title {
-            /* 37px - 57px */
-            font-size: clamp(2.3125rem, 6.1vw, 3.5625rem);
+            /* 32px - 57px */
+            font-size: clamp(2rem, 8vw, 3.5625rem);
             font-weight: 500;
-            line-height: 1.2em;
+            line-height: 1.1em;
             text-align: inherit;
             max-width: (829/16rem);
             margin: 0 auto (22/16rem) 0;
             color: #fff;
             position: relative;
+
+            br {
+                display: none;
+            }
         }
 
         .cs-text {
@@ -290,6 +294,16 @@
             max-width: (630/16rem);
             align-items: flex-start;
             padding: clamp(1.25rem, 2vw, 1.75rem);
+        }
+
+        .cs-title {
+            /* restore larger desktop title sizing */
+            font-size: clamp(2.3125rem, 6.1vw, 3.5625rem);
+            line-height: 1.2em;
+
+            br {
+                display: inline;
+            }
         }
 
         .cs-button-group {
