@@ -76,6 +76,14 @@
             color: #fff;
             position: relative;
 
+            .cs-line {
+                display: block;
+            }
+
+            .cs-line + .cs-line {
+                margin-top: 0.08em;
+            }
+
             br {
                 display: none;
             }
@@ -301,8 +309,21 @@
             font-size: clamp(2.3125rem, 6.1vw, 3.5625rem);
             line-height: 1.2em;
 
-            br {
+            .cs-line {
                 display: inline;
+            }
+
+            .cs-line + .cs-line {
+                margin-top: 0;
+            }
+
+            .cs-line:first-child:after,
+            .cs-line:nth-child(2):after {
+                content: " ";
+            }
+
+            .cs-line:last-child {
+                display: block;
             }
         }
 
